@@ -1,0 +1,46 @@
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>輪胎辨識</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body background="C:\Users\david\Downloads\S__141656068.jpg">
+ <div id="input_image_container"><img src="#" id="input_image" style="top:5vh;"width="355" height="416"></div>
+ <div class="container" id="tray">
+  <div id="uploadFile" class="custombutton">
+   <br/>
+   <br/>
+   <input type="file" name="fileupload" accept="image/*" onchange="display(event)">
+  </div>
+  <div class="custombutton">
+   <br/>
+   <br/>
+   <input type="button" name="predict" onclick="predict_classification()" value="PREDICT">
+  </div>
+ </div>
+ <div class="container output_screen">
+        <div id="emotion_tags">
+            <ul>
+    <br/>
+                <li>通過</li>
+    <br/>
+    <br/>
+                <li>不通過</li>
+    <br/>
+    <br/>
+                <li>通過&磨損點</li>
+            </ul>
+        </div>
+        <div id="output_chart"></div>
+        <div id="output_text"></div>
+    </div>
+ <div class="container output screen">
+  <div id="output_chart"></div>
+  <div id="output_text"></div>
+ </div>
+<script src="scripts/script.js"></script>
+<link href="c.css" rel="stylesheet" type="text/css">
+</body>
+</html>
